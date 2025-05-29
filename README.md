@@ -40,22 +40,6 @@
 * Необходимо выполнить перенос хранения сущности Message из реляционной базе данных Postgres в новый модуль/микросервис
   с другой базой данных, а именно Cassandra.
 
-### Лабораторная работа 4: Брокеры сообщений (Apache Kafka)
-
-* Разрабатываемая система обрабатывает сущности Author, Issue, Sticker и Message, которые логически связаны отношениями
-    * один-ко-многим (Author и Issue, Issue и Message)
-    * многие-ко-многим (Issue, Sticker).
-* Существует и работает REST-передача между модулями publisher и discussion сущности Message
-
-### Лабораторная работа 5: Кеширование данных (Redis)
-
-* Разрабатываемая система обрабатывает сущности Author, Issue, Sticker и Message, которые логически связаны отношениями
-    * один-ко-многим (Author и Issue, Issue и Message)
-    * многие-ко-многим (Issue, Sticker).
-* В Kafka настроена передача между модулями publisher и discussion сущности Message.
-* Author(s), Issue(s), Sticker(s) хранятся в Postgres.
-* Message(s) хранятся в Cassandra.
-
 <!----------------------------------------------------------------------------->
 
 [code_smells_badge]: https://sonarcloud.io/api/project_badges/measure?project=Hummel009_Distributed-Computing&metric=code_smells
